@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <title>Зміна дати</title>
+
+        <style type="text/css">
+            *{padding: 0;margin: 0;border: 0;}
+            :focus,:active{outline: none;}
+            body {
+                font-family: Arial;
+            }
+            .wrapper {
+                text-align: center; 
+            }
+            p {
+                font-size: 20px;
+                font-weight: 700;
+                margin: 20px 0 0 0;
+            }
+            input {
+                font-size: 20px;
+                width: 200px;
+                border: black solid 2px;
+                transition: all 0.2s ease;
+                margin: 5px 0 0 0;
+                padding: 3px;
+            }
+            input[type="text"]:focus {
+                border-color: #20fa2f;
+            }
+            input[type="submit"] {
+                padding: 10px 0;
+                background-color: #20fa2f;
+                color: black;
+                font-weight: 700;
+                cursor: pointer;
+                margin: 20px 0 0 0;
+            }
+            input[type="submit"]:hover {
+                background-color: black;
+                border: #20fa2f solid 2px;
+                color: #20fa2f;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="save_date.php" method="post">
+
+                <p>Дата початку: </p>
+                <input type="text" name="date_1">
+
+                <p>Дата кінця: </p>
+                <input type="text" name="date_2">
+
+                <!-- Secret password :) -->
+                <p>Додаткова дата: </p>
+                <input type="text" name="date_3">
+                <br>
+                <input type="submit" value="Зберегти">
+
+            </form> 
+        </div>
+    </body>
+</html>
